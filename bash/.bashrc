@@ -138,6 +138,8 @@ ex ()
   fi
 }
 
+alias n_switch="sudo optimus-manager --switch nvidia" 
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 #__conda_setup="$('/home/unique/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
