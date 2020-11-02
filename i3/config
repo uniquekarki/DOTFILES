@@ -151,9 +151,9 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 #shortcuts to open in specific workspace
 for_window [class="firefox"] move to workspace $ws3 ;exec --no-startup-id i3-msg workspace $ws3
 for_window [class="chrome"] move to workspace $ws3 ;exec --no-startup-id i3-msg workspace $ws3
-for_window [class="Code"] move to workspace $ws2 ;exec --no-startup-id i3-msg workspace $ws2
+for_window [class="code-git"] move to workspace $ws2 ;exec --no-startup-id i3-msg workspace $ws2
 for_window [class="discord"] move to workspace $ws8 ;exec --no-startup-id i3-msg workspace $ws8
-#for_window [class="pulse"] move to workspace $ws4 ;exec --no-startup-id i3-msg workspace $ws4
+for_window [class="Spotify"] move to workspace $ws5 ;exec --no-startup-id i3-msg workspace $ws5
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -198,7 +198,7 @@ bindsym $mod+r mode "resize"
 #}
 
 #wallpaper
-exec_always feh --bg-scale ~/Pictures/Wallpaper/w4.jpg
+exec_always feh --bg-scale ~/Pictures/Wallpaper/wallace.png
 
 #polybar activation
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
@@ -206,8 +206,9 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 #shortcut to open
 bindsym $mod+Shift+f exec --no-startup-id firefox
 bindsym $mod+Shift+g exec --no-startup-id chrome
-bindsym $mod+Shift+v exec --no-startup-id code
+bindsym $mod+Shift+v exec --no-startup-id code-git
 bindsym $mod+Shift+d exec --no-startup-id discord
+bindsym $mod+Shift+s exec --no-startup-id spotify
 
 #always run
 bindsym $mod+e exec --no-startup-id thunar
